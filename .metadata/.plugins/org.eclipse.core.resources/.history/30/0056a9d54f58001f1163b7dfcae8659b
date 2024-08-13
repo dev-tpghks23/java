@@ -1,0 +1,26 @@
+package chat01;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.net.Socket;
+import java.net.UnknownHostException;
+
+public class Client01 {
+	public static void main(String[] args) {
+		Socket socket = null;
+//		PrintWriter 클래스 : 텍스트 데이터를 효율적으로 출력할 수 있게 다양한 메소드를 제공하는 클래스
+		PrintWriter writer = null;
+		
+		try {
+		
+			String serverIp = "192.168.30.254";
+			socket = new Socket(serverIp, 7000);
+
+		} catch (UnknownHostException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+	}
+}

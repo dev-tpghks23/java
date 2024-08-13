@@ -1,0 +1,50 @@
+package chat03;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+
+public class Client03 {
+	
+}
+
+// 서버로부터 메세지를 처리하는 스레드
+class ClientThread extends Thread {
+	
+	private BufferedReader input;
+	
+	public ClientThread(BufferedReader input) {
+		this.input = input;
+	}
+	
+	@Override
+	public void run() {
+		String line = "";
+		try {
+			while((line = input.readLine()) != null) {
+				System.out.println(line);
+			}
+		} catch (IOException e) {
+			System.out.println("서버로부터 메세지 수신중 오류");
+		} finally {
+			try {
+				if(input != null) {
+					input.close();
+				}
+			} catch (IOException e) {
+				System.out.println("입력 스트림 닫는 중 생긴 오류");
+			}
+		}
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,10 @@
+package fileTask2;
+
+import java.util.ArrayList;
+
+public class FileTask2 {
+	public static void main(String[] args) {
+		ArrayList<User> users = ArrayList<User>();
+		
+	}
+}

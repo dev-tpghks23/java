@@ -1,0 +1,17 @@
+package fileTest;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+
+public class FileTest {
+	public static void main(String[] args) {
+
+//		new FileWriter(경로, 이어쓰기 여부)
+//		절대 경로: 어디에서 작성해도 찾아갈 수 있는 경로, "대한민국 서울시 강남구 역삼동 123-22 빌딩 302호", "C:/a/b"
+//		상대 경로: 현재 위치에 따라 변경되는 경로, "직진해서 우회전하세요", "../../a/b", "./a", "a"
+		
+		BufferedWriter bufferedWriter = new BufferedWriter(null);
+
+		
+	}
+}

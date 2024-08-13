@@ -1,0 +1,36 @@
+package collectionTest.arrayList.task;
+
+import java.util.ArrayList;
+
+public class UserField {
+	public ArrayList<User> users = DBConnecter.users;
+	public static String userId;
+	public static String code;
+	
+//	아이디 검사
+	public User checkId(String id) {
+		for(User user:users) {
+			if(user.getId().equals(id)) {
+				return user;
+			}
+		}
+		return null;
+	}
+	
+//	회원가입
+//	로그인
+	
+	
+//	로그인 로직
+//	로그아웃
+//	암호화
+//	비밀번호 변경
+//	비밀번호 변경(비밀번호 변경 30일)
+//	인증번호 전송
+//	인증메일 전송
+//	인증번호 확인
+	
+	public static void main(String[] args) {
+		
+	}
+}

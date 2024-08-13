@@ -1,0 +1,44 @@
+package collectionTest.hashSetTest;
+
+import java.util.HashSet;
+import java.util.Iterator;
+
+public class HashSetTest {
+	public static void main(String[] args) {
+		HashSet<String> mbti = new HashSet<String>();
+		
+		mbti.add("ISTP");
+		mbti.add("ISTP");
+		mbti.add("ENFJ");
+		mbti.add("ESTP");
+		mbti.add("INFP");
+		mbti.add("ENTJ");
+		mbti.add("INFJ");
+		mbti.add("ISFP");
+		System.out.println(mbti);
+		
+//		데이터를 가져오고 싶을 때 순서를 부여해야 한다.
+//		iterator 순서가 없을 때 순서를 부여할 수 있다.
+		Iterator<String> iter = mbti.iterator();
+		System.out.println(iter.hasNext());
+		if(iter.hasNext()) {
+			
+		}
+		
+		
+		
+	
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+

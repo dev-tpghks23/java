@@ -1,0 +1,44 @@
+package fileTest;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class FileTask {
+	public static void main(String[] args) throws IOException{
+//		fileWriter, fileReader
+//		음식 5개를 출력
+//		"스테이크", "돈까스", "피자", "스파게티", "햄버거"
+//		BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("food.txt", true));
+//		bufferedWriter.write("스테이크" + "\n");
+//		bufferedWriter.write("돈까스" + "\n");
+//		bufferedWriter.write("피자" + "\n");
+//		bufferedWriter.write("스파게티" + "\n");
+//		bufferedWriter.write("햄버거" + "\n");
+//		bufferedWriter.close();
+		
+		
+		BufferedReader bufferedReader = new BufferedReader(new FileReader("./food.txt"));
+		String line = null;
+		while((line = bufferedReader.readLine()) != null) {
+			System.out.println(line);
+		}
+		
+		
+		
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

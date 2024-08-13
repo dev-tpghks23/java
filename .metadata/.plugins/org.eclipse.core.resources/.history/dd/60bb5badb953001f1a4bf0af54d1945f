@@ -1,0 +1,108 @@
+package collectionTest;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class ArrayListTest<T> {
+//	<?>: 제네릭 - 포괄적인 즉 이름이 없는이라는 뜻
+//	지금 당장 무슨 타입일지 알 수 없을 때 사용하는 타입
+//	사용자가 어떤 타입의 데이터를 넣을지 모르니까 객체화 할 때 타입이 정해진다.
+	T data;
+	
+	public static void main(String[] args) {
+//		ArrayList<String> datas = new ArrayList<String>();
+		
+//		추가(삽입)
+//		datas.add("a");
+//		datas.add("b");
+//		datas.add("c");
+//		datas.add("d");
+//		System.out.println(datas.size());
+		
+//		블록을 잡고 -> alt + shift + z
+//		try {
+//			System.out.println(datas.get(-5));
+//		} catch (IndexOutOfBoundsException e) {
+//			System.out.println("인덱스를 똑바로 입력하세요!");
+//		} catch (Exception e){
+//			System.out.println("알 수 없는 오류");
+//			e.printStackTrace();
+//		}
+
+		ArrayList<Integer> datas = new ArrayList<Integer>();
+		
+	
+		datas.add(10);
+		datas.add(30);
+		datas.add(5);
+		datas.add(60);
+		datas.add(40);
+		datas.add(20);
+		datas.add(70);
+		datas.add(80);
+		datas.add(90);
+		
+		Collections.shuffle(datas);
+		
+//		실습 35분
+//		추가(삽입)
+//		50뒤에 500을 삽입
+		if(datas.contains(50)) {
+			datas.add(datas.indexOf(50) + 1, 500);
+		}
+		System.out.println(datas);
+		
+		
+		
+		
+		
+//		수정
+//		90을 9로 수정
+		
+//		삭제
+//		80 삭제
+
+//		검색
+//		모든 값을 출력
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,66 @@
+package reTry;
+
+public class Person {
+//  Person 클래스(부모클래스) - extends
+	//   각 필드의 이름과 타입을 정확히 입력하세요.
+	//   이름(name), 나이(age), 직업(job), 취미(hobby)
+	   
+	String name;
+	int age;
+	String job;
+	String hobby;
+
+	//   기본 생성자와 매개변수 2개가 있는 생성자,
+	//   총 2개를 생성자를 생성하세요.
+	//   이름(name)과 나이(age)를 초기화 생성자로 설정한다.
+	//   *참조 : this는 생략가능하지만 무조건 사용해야 한다.
+	
+	
+	public Person() {;}
+	public Person(String name, int age) {
+		this.name = name;
+		this.age = age;
+	}
+	
+	//   필드에 이름을 메소드를 구현하세요.
+	//   ex) "홍길동"
+	//   1. 메소드의 이름은 printName이다.
+	//   2. 리턴타입은 존재하지 않는다.
+	//   3. 매개변수를 받지 않는다.
+	   
+	void printName() {
+		System.out.println(name);
+	}
+	
+	//   하고 있는 일을 출력하는 메소드(work) : 리턴타입x, 매개변수 x
+	//   ex)"OO은 하는 일이 없습니다."
+	//   *OO은 해당 필드의 직업의 이름을 넣으세요.
+	   
+	void work() {
+		System.out.println(job);
+	}
+	
+	
+	//   직업을 출력하는 메소드(hobby) : 리턴타입x, 매개변수 x
+	//   "취미는 잠자기 입니다."를 출력하는 메소드
+	   
+	   
+	//   Student 클래스(자식클래스)
+	//   *Student 클래스는 Person 클래스를 상속받는 클래스이다
+	//   학생은 공부하는 학번(number)의 필드 값 정수형으로 존재한다.
+	//   모든 매개변수를 받는 생성자(부모클래스의 생성자 호출)를 만드세요.
+
+	//   work 메소드 오버라이딩
+	//   ex) “OO은 공부를 합니다.”
+	//   *OO은 해당 필드의 직업의 이름을 넣으세요.
+	   
+	//   hobby 메소드 오버라이딩
+	//   1~10까지 출력
+	//   for반복문으로 구현하시오.
+
+	//   printNumber 메소드 : 리턴타입x, 매개변수 x
+	//   학생의 학번을 출력해주는 메서드를 구현하세요.
+	//   "학생의 이름은 OOO이며 학번은 OOO입니다"를 출력
+	//   *OOO은 해당 필드의 이름과 학번을 넣으세요.
+	   
+}

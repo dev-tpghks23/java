@@ -1,0 +1,19 @@
+package optionalTest;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class OptionalTest {
+	public static void main(String[] args) {
+		ArrayList<User> users = new ArrayList<User>(Arrays.asList(
+				new User("김세환", "ksh", "1234"),
+				new User("홍길동", "hkd", "1234"),
+				new User("이순신", "lss", "1234"),
+				new User("장보고", "jbg", "1234")
+				));
+		
+	
+		
+		
+	}
+}

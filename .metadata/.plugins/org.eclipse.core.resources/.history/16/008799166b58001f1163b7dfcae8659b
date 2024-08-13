@@ -1,0 +1,75 @@
+package chat03;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.net.ServerSocket;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class Server03 {
+	public static void main(String[] args) {
+		
+		ServerSocket serverSocket = null;
+		List<PrintWriter> outputList = Collections.synchronizedList(new ArrayList<>());
+		
+		
+		try {
+			serverSocket = new ServerSocket(9999);
+			System.out.println("[서버 실행: 클라이언트 대기중..]");
+			
+//			서버 입력 처리
+			
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		
+	}
+}
+
+class ServerInputThread extends Thread {
+	
+	@Override
+	public void run() {
+	}
+	
+}
+
+class ServerThread extends Thread{
+	
+	@Override
+	public void run() {
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,17 @@
+package fileTest;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class FileTask {
+	public static void main(String[] args) throws IOException{
+//		fileWriter, fileReader
+//		음식 5개를 출력
+//		"스테이크", "돈까스", "피자", "스파게티", "햄버거"
+		BufferedWriter BufferedWriter = new BufferedWriter(new FileWriter("food.txt", true));
+		
+		
+		
+	}
+}

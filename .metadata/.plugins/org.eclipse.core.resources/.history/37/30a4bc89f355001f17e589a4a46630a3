@@ -1,0 +1,7 @@
+package fileTest;
+
+public class FileTask {
+	public static void main(String[] args) {
+//		음식 4개를 출력
+	}
+}

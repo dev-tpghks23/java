@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;accessTest&apos; to &apos;access1&apos;&#x0D;&#x0A;- Original project: &apos;access&apos;&#x0D;&#x0A;- Original element: &apos;access/src/accessTest&apos;&#x0D;&#x0A;- Renamed element: &apos;access/src/access1&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;accessTest&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;accessTest" name="access1" qualified="false" references="true" stamp="1722392948658" textual="false" version="1.0"/>
+</session>

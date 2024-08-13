@@ -1,0 +1,19 @@
+package collectionTest.arrayList.task;
+
+public class UserField {
+//	아이디 중복검사
+//	회원가입
+//	로그인
+//	로그인 로직
+//	로그아웃
+//	암호화
+//	비밀번호 변경
+//	비밀번호 변경(비밀번호 변경 30일)
+//	인증번호 전송
+//	인증메일 전송
+//	인증번호 확인
+	
+	public static void main(String[] args) {
+		
+	}
+}

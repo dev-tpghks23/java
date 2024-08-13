@@ -1,0 +1,25 @@
+package collectionTest.hashMapTest;
+
+import java.util.HashMap;
+
+public class HashMapTask {
+	public static void main(String[] args) {
+		
+		HashMap<String, Object> user = new HashMap<String, Object>();
+		user.put("userId", 1);
+		user.put("id", 3);
+		user.put("title", "오늘은 수요일!");
+		user.put("body", "점심 뭐먹지?");
+		
+		System.out.println(user);
+//		hashMap 만들기
+//		 "userId": 1,
+//	     "id": 3,
+//	     "title": "오늘은 수요일",
+//	     "body": "오늘 점심 뭐먹지?"
+		
+//		순서를 붙여서 title이 있으면 출력하기
+		
+		
+	}
+}

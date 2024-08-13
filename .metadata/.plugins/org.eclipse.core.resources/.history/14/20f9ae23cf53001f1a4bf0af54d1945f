@@ -1,0 +1,6 @@
+package collectionTest.arrayList.task;
+
+// 로그인 단위 테스트
+public class Login {
+	
+}

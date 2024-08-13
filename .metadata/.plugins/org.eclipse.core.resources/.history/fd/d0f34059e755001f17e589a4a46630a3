@@ -1,0 +1,18 @@
+package fileTest;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+
+public class FileTest {
+	public static void main(String[] args) {
+
+//		new FileWriter(경로, 이어쓰기 여부)
+//		절대 경로:
+//		상대 경로:
+		
+		
+		BufferedWriter bufferedWriter = new BufferedWriter(null);
+
+		
+	}
+}

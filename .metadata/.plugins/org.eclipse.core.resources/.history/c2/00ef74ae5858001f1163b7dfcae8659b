@@ -1,0 +1,28 @@
+package chat02;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.net.Socket;
+import java.net.UnknownHostException;
+import java.util.Scanner;
+
+public class Client02 {
+	public static void main(String[] args) throws IOException{
+		Socket clientSocket = null;
+		BufferedReader bufferedReader = null;
+		BufferedWriter bufferedWriter = null;
+		Scanner sc = null;
+		
+		try {
+		
+			clientSocket = new Socket("localhost", 7777);
+		
+		} catch (UnknownHostException e) {
+			e.printStackTrace();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+	}
+}

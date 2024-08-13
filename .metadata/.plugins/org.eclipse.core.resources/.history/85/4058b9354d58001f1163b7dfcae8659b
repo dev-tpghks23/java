@@ -1,0 +1,54 @@
+package chat01;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.net.ServerSocket;
+import java.net.Socket;
+import java.net.UnknownHostException;
+
+public class Server01 {
+	public static void main(String[] args) {
+		
+//		소켓 선언
+//		서버 소켓
+		ServerSocket serverSocket = null;
+		
+//		클라이언트 소켓
+		Socket socket = null;
+		
+//		입력 스트림을 읽기 위한 BufferedReader
+		BufferedReader reader = null;
+		
+		try {
+			
+			serverSocket = new ServerSocket(1100);
+			System.out.println("서버가 실행되었습니다.");
+			
+			
+			
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		
+		
+		
+		
+		
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

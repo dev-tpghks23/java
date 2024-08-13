@@ -1,0 +1,15 @@
+package dateTest;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class DateTest {
+	public static void main(String[] args) {
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy년 MM월 dd일");
+		Date date = new Date();
+		
+		System.out.println(date);
+		simpleDateFormat.format(date);
+		System.out.println(simpleDateFormat.format(date));
+	}
+}

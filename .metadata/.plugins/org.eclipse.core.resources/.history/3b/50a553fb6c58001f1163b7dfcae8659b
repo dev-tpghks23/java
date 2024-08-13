@@ -1,0 +1,99 @@
+package chat03;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
+import java.net.ServerSocket;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class Server03 {
+	public static void main(String[] args) {
+		
+		ServerSocket serverSocket = null;
+		List<PrintWriter> outputList = Collections.synchronizedList(new ArrayList<>());
+		
+		try {
+			serverSocket = new ServerSocket(9999);
+			System.out.println("[서버 실행: 클라이언트 대기중..]");
+			
+//			서버 입력 처리
+			
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		
+	}
+}
+
+// 서버에서 직접 메세지를 입력받아 클라이언트에게 전송하는 스레드
+class ServerInputThread extends Thread {
+	
+	private final List<PrintWriter> outputList;
+	
+	public ServerInputThread(List<PrintWriter> outputList) {
+		this.outputList = outputList;
+	}
+	
+	@Override
+	public void run() {
+		
+		try {
+			BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));			
+			String message = "";
+			while((message = bufferedReader.readLine()) != null) {
+				System.out.println("서버 :" + message);
+				for(PrintWriter out :outputList) {
+					out.println("서버 :" + message);
+				}
+			} 
+			
+		} catch (IOException e) {
+			System.out.println("서버 입력 처리 중 오류");
+			e.printStackTrace();
+		}
+	
+	}
+	
+}
+
+class ServerThread extends Thread{
+	
+	@Override
+	public void run() {
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

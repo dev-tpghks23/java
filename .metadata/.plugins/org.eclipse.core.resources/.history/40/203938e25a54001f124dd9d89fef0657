@@ -1,0 +1,20 @@
+package collectionTest.hashSetTest;
+
+import java.util.HashSet;
+
+public class HashSetTest {
+	public static void main(String[] args) {
+		HashSet<String> mbti = new HashSet<String>();
+		
+		mbti.add("ISTP");
+		mbti.add("ISTP");
+		mbti.add("ENFJ");
+		mbti.add("ESTP");
+		mbti.add("INFP");
+		mbti.add("ENTJ");
+		mbti.add("INFJ");
+		mbti.add("ISFP");
+		System.out.println(mbti);
+	
+	}
+}

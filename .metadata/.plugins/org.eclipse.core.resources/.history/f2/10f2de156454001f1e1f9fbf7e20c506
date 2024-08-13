@@ -1,0 +1,19 @@
+package collectionTest.hashMapTest;
+
+import java.util.HashMap;
+
+public class HashMapTest {
+	public static void main(String[] args) {
+		HashMap<String, Object> userMap = new HashMap<String, Object>();
+		userMap.put("id", "ksh1234");
+		userMap.put("id", "ksh1234");
+		userMap.put("password", "1234");
+		userMap.put("address", "경기도 구리시");
+		userMap.put("age", 20);
+		userMap.put("isRich", true);
+		
+//		collection 자료구조는 toString 재정의가 되어있다.
+		System.out.println(userMap);
+		
+	}
+}

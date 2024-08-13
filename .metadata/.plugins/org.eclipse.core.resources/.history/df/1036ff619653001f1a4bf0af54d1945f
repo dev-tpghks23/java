@@ -1,0 +1,6 @@
+package lotto;
+
+public class LottoTest {
+	Lotto lotto = new Lotto();
+	lotto.getLuckyNumber();
+}

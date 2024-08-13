@@ -1,0 +1,72 @@
+package collectionTest.arrayList.task;
+
+import java.util.ArrayList;
+
+public class UserField {
+	public ArrayList<User> users = DBConnecter.users;
+	public static String userId;
+	public static String code;
+	
+//	아이디 검사
+	public User checkId(String id) {
+		for(User user:users) {
+			if(user.getId().equals(id)) {
+				return user;
+			}
+		}
+		return null;
+	}
+	
+//	회원가입
+//	로그인
+//	public boolean login(User user) {
+//		for(User userInDb: users) {
+//			if(userInDb.getId().equals(user.getId())) {
+//				if(userInDb.getPassword().equals(user.getPassword()))) {
+//					return true;
+//				}
+//			}
+//		}
+//		return false;
+//	}
+
+	public boolean login(User user) {
+		User userInDb = checkId(user.getId());
+		if(userInDb != null) {
+			if(userInDb.getPassword().equals(user.getPassword())) {
+				userId = user.getId();
+				return true;
+			}
+		}
+		return false;
+	}
+
+//	로그아웃
+	public void logout() {
+		userId = null;
+	}
+ 
+//	실습
+//	비밀번호 변경(마이페이지)
+//	암호화
+	
+	
+//	비밀번호 변경(비밀번호 변경 30일)
+//	인증번호 전송
+//	인증메일 전송
+//	인증번호 확인
+	
+	public static void main(String[] args) {
+		
+	}
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,15 @@
+package lotto;
+
+public class Lotto {
+	void getLuckyNumber() {
+		for(int i = 0; i < 6; i++) {
+			String[] luckyNumber = new String[6];
+			luckyNumber[i] = String.valueOf(Math.floor(Math.random() * 45 + 1));
+		}
+	}
+	
+	public static void main(String[] args) {
+		Lotto lotto = new Lotto();
+		lotto.getLuckyNumber();
+	}
+}
